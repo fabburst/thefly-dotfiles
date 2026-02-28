@@ -60,14 +60,14 @@ Installez d'abord les outils en Rust sur votre machine :
 
 **🍏 Sur macOS (via Homebrew) :**
 ```bash
-brew install starship eza bat zoxide lazygit
+brew install starship eza bat zoxide lazygit gum
 ```
 
 **🐧 Sur Ubuntu / Debian / WSL :**
 ```bash
 sudo apt update && sudo apt install git zsh
 curl -sS https://starship.rs/install.sh | sh
-# Note : Pour eza, bat et zoxide sur Ubuntu, utilisez cargo ou téléchargez les .deb officiels.
+# Note : Pour eza, bat, zoxide et gum sur Ubuntu, utilisez leurs dépôts officiels ou Homebrew pour Linux.
 ```
 
 **🪟 Sur Windows (via WSL) :**
