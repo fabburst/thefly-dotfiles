@@ -1,0 +1,14 @@
+# Ce fichier est le point d'entrée de Thefly.
+# Il est exécuté à chaque ouverture de votre terminal.
+
+# Chargement de toutes nos configurations personnalisées
+for rc_file in ~/.fly.d/rc/*.sh; do
+    if [ -f "$rc_file" ]; then
+        source "$rc_file"
+    fi
+done
+
+# Chargement du prompt Starship selon le shell utilisé (Zsh ou Bash)
+if command -v starship &> /dev/null; then
+    eval "$(starship init $(basename $SHELL))"
+fi
