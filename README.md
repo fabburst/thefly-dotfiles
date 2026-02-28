@@ -73,8 +73,15 @@ Pour profiter de ce terminal sous Windows, l'utilisation de WSL (Windows Subsyst
    ```powershell
    wsl --install
    ```
-2. Redémarrez votre PC, ouvrez "Ubuntu" dans votre menu Démarrer pour créer votre utilisateur.
-3. Suivez ensuite les instructions de la section **Ubuntu / Debian** ci-dessus.
+2. **Redémarrez impérativement votre ordinateur.**
+3. Au redémarrage, une fenêtre "Ubuntu" s'ouvrira. Choisissez un **nom d'utilisateur** et un **mot de passe** (les caractères ne s'affichent pas pendant la saisie du mot de passe, c'est normal).
+4. Une fois dans le terminal Ubuntu, lancez l'installation :
+   ```bash
+   sudo apt update && sudo apt install git zsh -y
+   git clone https://github.com/fabburst/thefly-dotfiles.git ~/.fly.d
+   bash ~/.fly.d/install.sh
+   chsh -s $(which zsh)
+   ```
 *(💡 Astuce : Utilisez l'application [Windows Terminal](https://apps.microsoft.com/detail/9n0dx20hk701) pour la meilleure expérience avec WSL).*
 
 ### 2. Le Déploiement Magique
