@@ -34,7 +34,8 @@ Cette configuration s'appuie sur les outils CLI les plus modernes et performants
 | 📁 **[eza](https://github.com/eza-community/eza)** | Un remplaçant moderne de `ls` qui affiche les icônes des fichiers, le statut Git et utilise des couleurs sémantiques. | `ls` |
 | 🦇 **[bat](https://github.com/sharkdp/bat)** | Un clone de `cat` avec coloration syntaxique, intégration Git et pagination automatique. | `cat`, `less` |
 | 🚀 **[zoxide](https://github.com/ajeetdsouza/zoxide)** | Un remplaçant intelligent pour `cd`. Il mémorise vos dossiers préférés pour des sauts instantanés (ex: `z doc`). | `cd` |
-| 🔌 **Plugins Zsh** | **`zsh-autosuggestions`** (suggère la suite de la commande selon l'historique) et **`zsh-syntax-highlighting`** (colore la commande pendant la frappe). | - |
+| 🔌 **Plugins Zsh** | **`zsh-autosuggestions`** (suggère la suite de la commande) et **`zsh-syntax-highlighting`** (colore la commande pendant la frappe). | - |
+| ⏪ **[Redo](https://github.com/joknarf/redo)** | Remplacement du menu d'historique (`Ctrl+R`). Ouvre une interface interactive pour chercher, filtrer et modifier les anciennes commandes. | `Ctrl+R` |
 
 ---
 

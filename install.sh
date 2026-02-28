@@ -10,9 +10,10 @@ if ! command -v fly &> /dev/null; then
 fi
 
 # 2. Installation des plugins "trendy" via Thefly
-echo "🔌 Installation des plugins Zsh/Bash (Auto-suggestions, Syntax Highlighting)..."
+echo "🔌 Installation des plugins Zsh/Bash (Auto-suggestions, Syntax Highlighting, Redo)..."
 fly add zsh-users/zsh-autosuggestions
 fly add zsh-users/zsh-syntax-highlighting
+fly add joknarf/redo
 
 # 3. Lien symbolique pour les dotfiles d'applications (ex: Starship)
 echo "🔗 Création des liens pour les fichiers de configuration..."
