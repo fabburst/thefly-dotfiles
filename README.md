@@ -30,7 +30,9 @@ Cette configuration s'appuie sur les outils CLI les plus modernes et performants
 | Outil | Description | Remplacement |
 | :--- | :--- | :--- |
 | 🪰 **[Thefly](https://github.com/joknarf/thefly)** | Le cœur du système. Il gère les plugins, organise les dotfiles et permet d'emporter son environnement partout via SSH. | *GNU Stow, Oh-My-Zsh* |
-| 🌠 **[Starship](https://starship.rs/)** | L'invite de commande (prompt) universelle. Ultra-rapide, affiche le statut Git, la version de Node/Python, etc. | *Thèmes natifs Zsh/Bash* |
+| 🌠 **[Starship](https://starship.rs/)** | L'invite de commande (prompt) universelle. Configurée avec un magnifique design **Powerline** et la palette de couleurs **Nord** ❄️. | *Thèmes natifs Zsh/Bash* |
+
+> ⚠️ **Important :** Pour que les icônes (Git, Node, Rust) et le design Powerline s'affichent correctement, vous devez impérativement utiliser une **[Nerd Font](https://www.nerdfonts.com/)** (ex: *MesloLGS NF* ou *FiraCode Nerd Font*) dans les paramètres de votre terminal (Windows Terminal, iTerm2, Alacritty, etc.).
 | 📁 **[eza](https://github.com/eza-community/eza)** | Un remplaçant moderne de `ls` qui affiche les icônes des fichiers, le statut Git et utilise des couleurs sémantiques. | `ls` |
 | 🦇 **[bat](https://github.com/sharkdp/bat)** | Un clone de `cat` avec coloration syntaxique, intégration Git et pagination automatique. | `cat`, `less` |
 | 🚀 **[zoxide](https://github.com/ajeetdsouza/zoxide)** | Un remplaçant intelligent pour `cd`. Il mémorise vos dossiers préférés pour des sauts instantanés (ex: `z doc`). | `cd` |

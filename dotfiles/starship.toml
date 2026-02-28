@@ -1,30 +1,76 @@
-# Configuration Starship minimaliste et élégante
+# Configuration Starship - Style Powerline & Thème "Nord"
 add_newline = true
+palette = "nord"
 
-[character]
-success_symbol = "[➜](bold green)"
-error_symbol = "[✗](bold red)"
+[palettes.nord]
+dark_bg = "#2E3440"
+dark_fg = "#D8DEE9"
+nord_blue = "#81A1C1"
+nord_light_blue = "#88C0D0"
+nord_green = "#A3BE8C"
+nord_red = "#BF616A"
+nord_yellow = "#EBCB8B"
+nord_purple = "#B48EAD"
+
+format = """
+[](nord_blue)\
+$directory\
+[](bg:nord_purple fg:nord_blue)\
+$git_branch\
+$git_status\
+[](bg:nord_green fg:nord_purple)\
+$nodejs\
+$python\
+$rust\
+[](fg:nord_green)\
+$character"""
+
+right_format = """
+[](nord_blue)\
+[ $cmd_duration ](bg:nord_blue fg:dark_bg)\
+[](bg:nord_blue fg:nord_light_blue)\
+[ $time ](bg:nord_light_blue fg:dark_bg)\
+"""
 
 [directory]
+style = "bg:nord_blue fg:dark_bg bold"
+format = "[ $path ]($style)"
 truncation_length = 3
-truncate_to_repo = true
-style = "bold blue"
+truncate_to_repo = false
 
 [git_branch]
-symbol = "🌱 "
-style = "bold purple"
+symbol = " "
+style = "bg:nord_purple fg:dark_bg bold"
+format = "[ $symbol$branch ]($style)"
 
 [git_status]
-style = "bold red"
+style = "bg:nord_purple fg:nord_red bold"
+format = "[$all_status$ahead_behind ]($style)"
 
 [nodejs]
-symbol = "⬢ "
-style = "bold green"
+symbol = " "
+style = "bg:nord_green fg:dark_bg"
+format = "[ $symbol($version) ]($style)"
 
 [python]
-symbol = "🐍 "
-style = "bold yellow"
+symbol = " "
+style = "bg:nord_green fg:dark_bg"
+format = "[ $symbol($version) ]($style)"
 
 [rust]
-symbol = "🦀 "
-style = "bold red"
+symbol = " "
+style = "bg:nord_green fg:dark_bg"
+format = "[ $symbol($version) ]($style)"
+
+[cmd_duration]
+min_time = 500
+format = "[$duration]($style)"
+
+[time]
+disabled = false
+time_format = "%T" # Format 24h
+format = "[$time]($style)"
+
+[character]
+success_symbol = "[ ❯](bold nord_light_blue)"
+error_symbol = "[ ❯](bold nord_red)"
