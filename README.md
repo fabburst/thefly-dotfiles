@@ -67,6 +67,16 @@ curl -sS https://starship.rs/install.sh | sh
 # Note : Pour eza, bat et zoxide sur Ubuntu, utilisez cargo ou téléchargez les .deb officiels.
 ```
 
+**🪟 Sur Windows (via WSL) :**
+Pour profiter de ce terminal sous Windows, l'utilisation de WSL (Windows Subsystem for Linux) est **requise**.
+1. Ouvrez PowerShell en administrateur et installez WSL (Ubuntu par défaut) :
+   ```powershell
+   wsl --install
+   ```
+2. Redémarrez votre PC, ouvrez "Ubuntu" dans votre menu Démarrer pour créer votre utilisateur.
+3. Suivez ensuite les instructions de la section **Ubuntu / Debian** ci-dessus.
+*(💡 Astuce : Utilisez l'application [Windows Terminal](https://apps.microsoft.com/detail/9n0dx20hk701) pour la meilleure expérience avec WSL).*
+
 ### 2. Le Déploiement Magique
 Cloner ce dépôt comme votre nouveau "Quartier Général" et lancez le script d'installation :
 
